@@ -119,7 +119,18 @@
 //? Exercise 10: Vowel Checker
 //? Create a function called isVowel that takes a character as a parameter and prints whether the character is a vowel or not to the console. Use an if-else statement. Call the function with different characters.
 
+function isVowel(char) {
+    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y") {
+        console.log(char + " is a vowel.");
 
+    } else {
+        console.log(char + " is not a vowel.");
+
+    }
+}
+
+isVowel("a");
+isVowel("b");
 
 //? Exercise 11: Largest in Array
 //? Create a function called largestInArray that takes an array of numbers as a parameter and prints the largest number in the array to the console. Use the Math.max function. Call the function with different arrays.
