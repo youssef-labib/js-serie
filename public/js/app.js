@@ -190,25 +190,40 @@
 //? Exercice 14: Array Intersection
 //? Create a function called arrayIntersection that takes two arrays as parameters and returns a new array containing the common elements between them.
 
-function arrayIntersection(arr1, arr2) {
-    let result = [];
+// function arrayIntersection(arr1, arr2) {
+//     let result = [];
 
 
-    for (let i = 0; i < arr1.length; i++) {
+//     for (let i = 0; i < arr1.length; i++) {
 
-        if (arr2.includes(arr1[i])) {
-            result.push(arr1[i]);
-        }
-    }
+//         if (arr2.includes(arr1[i])) {
+//             result.push(arr1[i]);
+//         }
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-let arr1 = [1, 2, 5, 4, 1, 8, 7, 4];
-let arr2 = [1, 4, 7, 8];
+// let arr1 = [1, 2, 5, 4, 1, 8, 7, 4];
+// let arr2 = [1, 4, 7, 8];
 
-console.log(arrayIntersection(arr1, arr2));
+// console.log(arrayIntersection(arr1, arr2));
 
 
 //? Exercice 15: Fibonacci Sequence
 
+function fibonacci(number) {
+    let num1 = 0;
+    let num2 = 1;
+    let nextresult;
+
+    for (let index = 1; index <= number; index++) {
+        console.log(num1);
+
+        nextresult = num1 + num2;
+        num1 = num2;
+        num2 = nextresult
+    }
+}
+
+fibonacci(10)
