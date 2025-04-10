@@ -149,34 +149,65 @@
 //? Exercise 12: Prime Number Checker
 //? Create a function called isPrime that takes a number as a parameter and prints whether the number is a prime number or not to the console. Use loops and conditional statements. Call the function with different numbers.
 
-function isPrime(number) {
-    let Prime = true;
+// function isPrime(number) {
+//     let Prime = true;
 
-    if (number < 2) {
-        Prime = false;
-    }
-    else {
-        for (let index = 2; index < number; index++) {
-            if (number % index === 0) {
-                Prime = false;
-            }
-        }
-    }
+//     if (number < 2) {
+//         Prime = false;
+//     }
+//     else {
+//         for (let index = 2; index < number; index++) {
+//             if (number % index === 0) {
+//                 Prime = false;
+//             }
+//         }
+//     }
 
-    console.log(Prime);
-}
+//     console.log(Prime);
+// }
 
-isPrime(29);
-isPrime(30);
+// isPrime(29);
+// isPrime(30);
 
 //? Exercise 13: Sum of Digits
 //? Create a function called sumOfDigits that takes a positive integer as a parameter and calculates the sum of its digits. Print the result to the console.
 
+// function sumOfDigits(int) {
+//     let sum = 0;
 
+//     while (int > 0) {
+//         sum += int % 10;
+//         int = Math.floor(int / 10);
+//     }
+
+//     console.log("The sum of the digits is: " + sum);
+
+// }
+
+// sumOfDigits(3214);
+// sumOfDigits(98);
 
 //? Exercice 14: Array Intersection
 //? Create a function called arrayIntersection that takes two arrays as parameters and returns a new array containing the common elements between them.
 
+function arrayIntersection(arr1, arr2) {
+    let result = [];
+
+
+    for (let i = 0; i < arr1.length; i++) {
+
+        if (arr2.includes(arr1[i])) {
+            result.push(arr1[i]);
+        }
+    }
+
+    return result;
+}
+
+let arr1 = [1, 2, 5, 4, 1, 8, 7, 4];
+let arr2 = [1, 4, 7, 8];
+
+console.log(arrayIntersection(arr1, arr2));
 
 
 //? Exercice 15: Fibonacci Sequence
