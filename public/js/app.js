@@ -119,28 +119,55 @@
 //? Exercise 10: Vowel Checker
 //? Create a function called isVowel that takes a character as a parameter and prints whether the character is a vowel or not to the console. Use an if-else statement. Call the function with different characters.
 
-function isVowel(char) {
-    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y") {
-        console.log(char + " is a vowel.");
+// function isVowel(char) {
+//     if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y") {
+//         console.log(char + " is a vowel.");
 
-    } else {
-        console.log(char + " is not a vowel.");
+//     } else {
+//         console.log(char + " is not a vowel.");
 
-    }
-}
+//     }
+// }
 
-isVowel("a");
-isVowel("b");
+// isVowel("a");
+// isVowel("b");
 
 //? Exercise 11: Largest in Array
 //? Create a function called largestInArray that takes an array of numbers as a parameter and prints the largest number in the array to the console. Use the Math.max function. Call the function with different arrays.
 
+// function largestInArray(arr) {
+//     let largest = Math.max(...arr)
+
+//     console.log("The largest number in the array is: " + largest);
+
+// }
+
+// largestInArray([1, 5, 6, 3]);
+// largestInArray([5, 9, -14, 10]);
 
 
 //? Exercise 12: Prime Number Checker
 //? Create a function called isPrime that takes a number as a parameter and prints whether the number is a prime number or not to the console. Use loops and conditional statements. Call the function with different numbers.
 
+function isPrime(number) {
+    let Prime = true;
 
+    if (number < 2) {
+        Prime = false;
+    }
+    else {
+        for (let index = 2; index < number; index++) {
+            if (number % index === 0) {
+                Prime = false;
+            }
+        }
+    }
+
+    console.log(Prime);
+}
+
+isPrime(29);
+isPrime(30);
 
 //? Exercise 13: Sum of Digits
 //? Create a function called sumOfDigits that takes a positive integer as a parameter and calculates the sum of its digits. Print the result to the console.
