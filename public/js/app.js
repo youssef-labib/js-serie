@@ -217,7 +217,7 @@ function fibonacci(number) {
     let num2 = 1;
     let nextresult;
 
-    for (let index = 1; index <= number; index++) {
+    for (let index = 0; index <= number; index++) {
         console.log(num1);
 
         nextresult = num1 + num2;
